@@ -1,113 +1,216 @@
-import Image from 'next/image'
+import Image from "next/image";
+import "@/style/globals.scss";
+import { Card_course, Question, Sientific_guide } from "@/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="lg:mx-[60px] lg:mt-[24px] ">
+      <section className="grid justify-center gap-[50px] mt-[120px]  mb-[147px] relative">
+        <div className="grid gap-[24px] justify-center justify-items-center ">
+          <Image src="/ino.png" alt="" width={408} height={187}></Image>
+          <h1
+            className={`leading-[50.4px] text-[36px] font-medium text-center font-nunito w-[465px]`}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Не только образование, но и помощь в выборе себя и поиске будущего
+          </h1>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        <button className="bg-hightlight text-[24px] font-medium px-20 py-5 rounded-[900px]">
+          Подробнее о конструкторе INO
+        </button>
+      </section>
+      <section className="grid">
+        <div className=" grid grid-flow-col justify-self-start items-center gap-[20px]">
+          <Image src="/ino.png" alt="" width={107} height={49} />
+          <h1 className="leading-[72.8px] text-[52px] font-medium font-nunito text-text_accent">
+            — новинка на рынке образования
+          </h1>
+        </div>
+        <p className="text-[30px] leading-[42px] text-text_accent mt-[48px] w-[1063px] max-w-full">
+          Это уникальный модульный обучающий игровой программно-аппаратный
+          комплекс, специально разработанный для наглядной демонстрации и
+          <span className="bg-hightlight rounded-[20px] ml-1 px-2">
+            обучения электронике и созданию Internet of Things
+          </span>
+        </p>
+        <p className="text-[24px] leading-[33.6px] text-[#575757] mt-[32px] w-[737px] max-w-full">
+          Мы верим в то, что развитие навыков в области технологий является
+          ключевым фактором успеха в современном мире
+        </p>
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-medium font-nunito text-text_accent mt-[140px]">
+          Собери свою
+          <span className="bg-hightlight rounded-[20px] ml-1 px-2">
+            специальность
+          </span>
+        </h1>
+        <div className="grid grid-cols-12 gap-6 mt-[48px]">
+          <div className="col-span-7 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Программирование
+            </p>
+          </div>
+          <div className="col-span-5 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Схемотехника
+            </p>
+          </div>
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Электроника
+            </p>
+          </div>
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Робототехника
+            </p>
+          </div>
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Проектирование
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-bold font-nunito text-text_accent mt-[140px]">
+          Пройди
+          <span className="text-accent font-medium ml-2 ">
+            профориентанционный тест
+          </span>
+        </h1>
+        <p className="text-[30px] leading-[42px] text-black font-medium mt-[48px] w-[954px] max-w-full">
+          Мы составили{" "}
+          <span className="bg-hightlight rounded-[20px] px-2">
+            профориентационный тест,
+          </span>{" "}
+          по результатам которого мы составляем рекомендации проектов для наших
+          студентов
+        </p>
+        <div className="relative bg-[#F0F0F0] rounded-[16px] h-[226px] mt-[32px]">
+          <h2 className="font-nunito font-medium text-[32px] mt-[24px] ml-[32px] mb-[16px] text-text_accent">
+            Профориентационный тест
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          <p className="text-[20px] leading-[28px] ml-[32px] w-[710px] max-w-full text-[#909090]">
+            Если вы не уверены в том, что хотите начать изучать, то вы можете
+            пройти наш тест, который позволит вам уточнить ваш вектор
+            профессионального развития
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <button className="absolute right-[32px] bottom-[24px] bg-hightlight  px-5 py-4 rounded-[900px] text-[20px] ">
+            Начать тест
+          </button>
+        </div>
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-bold font-nunito text-text_accent mt-[140px]">
+          Попробуй себя в
+          <span className="text-accent font-normal ml-2 ">новой профессии</span>
+        </h1>
+        <div className="grid grid-cols-2 mt-[48px]">
+          <div className="col-span-1">
+            <p className="text-[30px] leading-[42px] text-black font-medium mt-[48px] w-[404px] max-w-full">
+              Пройди вводные уроки{" "}
+              <span className="bg-hightlight rounded-[20px] px-1">
+                совершенно бесплатно
+              </span>
+            </p>
+            <p className="text-[24px] leading-[33.6px] w-[621px] max-w-full text-[#909090] mt-[32px]">
+              Вводные уроки позволят погрузиться в процесс учебы на платформе
+              INO. Также за прохождение всех вводных уроков вы получите скидку в
+              10% на выбранный курс
+            </p>
+          </div>
+          <div className="col-span-1 bg-accent rounded-[16px] grid justify-items-center">
+            <input
+              type="text"
+              placeholder="E-mail"
+              className="w-[90%] mt-[32px] pl-[32px] text-[20px] h-[76px] rounded-[16px]"
+            />{" "}
+            <input
+              type="text"
+              placeholder="Выбери направление обучения"
+              className="w-[90%] pl-[32px] text-[20px] h-[76px] rounded-[16px] mt-[24px]"
+            />{" "}
+            <button className=" bg-hightlight py-[22px] rounded-[900px] text-[20px] w-[564px] mt-[28px] mb-[48px]">
+              Получить вводные уроки
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-medium font-nunito text-text_accent mt-[140px] mb-[48px]">
+          Как проходит
+          <span className="bg-hightlight rounded-[20px] ml-1 px-2">
+            обучение
+          </span>
+        </h1>
+        <Sientific_guide />
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-medium font-nunito text-text_accent mt-[140px] mb-[48px]">
+          Комплект
+        </h1>
+        <div className="grid grid-cols-12 gap-[24px]">
+          <div className="row-span-2 col-span-4 border-[2px] border-solid border-[#A56FFF] rounded-[16px] h-[432px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Конструктор INO
+            </h2>
+          </div>
+          <div className="col-span-5 border-[2px] border-solid border-camchua rounded-[16px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Плата
+            </h2>
+          </div>
+          <div className="col-span-3 border-[2px] border-solid border-accent rounded-[16px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Модули
+            </h2>
+          </div>
+          <div className="col-span-4 border-[2px] border-solid border-accent rounded-[16px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Паяльник
+            </h2>
+          </div>
+          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Провода
+            </h2>
+          </div>
+          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px]">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+              Инструкция
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-bold font-nunito text-text_accent mt-[140px] w-[1063px] max-w-full">
+          Выбери подходящий для тебя
+          <span className="text-accent font-normal ml-2 ">
+            формат конструктора INO
+          </span>
+        </h1>
+        <Card_course />
+      </section>
+      <section className="grid">
+        <Question />
+      </section>
     </main>
-  )
+  );
 }
