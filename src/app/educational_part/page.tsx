@@ -1,10 +1,5 @@
 const Educational = () => {
-  return (
-    <>
-      Hello world{" "}
-      <div className="text-3xl">boi anh mai mai la nguoi den sau</div>
-    </>
-  );
+  return <main className="lg:mx-[80px] lg:mt-[24px] "></main>;
 };
 
 export default Educational;

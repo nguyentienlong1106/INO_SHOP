@@ -13,7 +13,7 @@ export default function Home() {
     <main className="lg:mx-[80px] lg:mt-[24px] ">
       <section className="grid justify-center gap-[50px] mt-[120px]  mb-[147px] relative">
         <div className="grid gap-[24px] justify-center justify-items-center ">
-          <Image src="/ino.png" alt="" width={408} height={187}></Image>
+          <Image src="/ino.png" alt="" width={408} height={187} />
           <h1
             className={`leading-[50.4px] text-[36px] font-medium text-center font-nunito w-[465px]`}
           >
@@ -24,6 +24,48 @@ export default function Home() {
         <button className="bg-hightlight text-[24px] font-medium px-20 py-5 rounded-[900px]">
           Подробнее о конструкторе INO
         </button>
+        <Image
+          className="absolute left-[45px]"
+          src="/star1.png"
+          alt=""
+          width={44}
+          height={44}
+        />
+        <Image
+          className="absolute top-[200px] left-[80px]"
+          src="/star2.png"
+          alt=""
+          width={64.73}
+          height={64.73}
+        />
+        <Image
+          className="absolute bottom-[10px] left-[60px]"
+          src="/star2.png"
+          alt=""
+          width={58}
+          height={58}
+        />
+        <Image
+          className="absolute right-[185px] top-[50px] "
+          src="/star2.png"
+          alt=""
+          width={46.36}
+          height={46.36}
+        />
+        <Image
+          className="absolute right-[190px] bottom-[140px]"
+          src="/star1.png"
+          alt=""
+          width={52}
+          height={52}
+        />
+        <Image
+          className="absolute right-[60px] bottom-[85px]"
+          src="/star1.png"
+          alt=""
+          width={32}
+          height={32}
+        />
       </section>
       <section className="grid">
         <div className=" grid grid-flow-col justify-self-start items-center gap-[20px]">
