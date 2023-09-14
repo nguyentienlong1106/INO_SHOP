@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="bg-accent lg:mx-[60px] lg:mt-[24px] rounded-[20px]">
+    <header className="bg-accent xl:mx-[80px] xl:mt-[24px] rounded-[20px]">
       <div className="grid grid-flow-col justify-between px-[48px] py-[29px] ">
         <div className="grid grid-flow-col">
           <Link href={"/"}>

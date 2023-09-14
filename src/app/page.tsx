@@ -1,10 +1,16 @@
 import Image from "next/image";
 import "@/style/globals.scss";
-import { Card_course, Question, Sientific_guide } from "@/components";
+import {
+  Add_question,
+  Card_course,
+  Question,
+  Sientific_guide,
+  Slide_infor,
+} from "@/components";
 
 export default function Home() {
   return (
-    <main className="lg:mx-[60px] lg:mt-[24px] ">
+    <main className="lg:mx-[80px] lg:mt-[24px] ">
       <section className="grid justify-center gap-[50px] mt-[120px]  mb-[147px] relative">
         <div className="grid gap-[24px] justify-center justify-items-center ">
           <Image src="/ino.png" alt="" width={408} height={187}></Image>
@@ -208,8 +214,35 @@ mt-[32px] ml-[40px]"
         </h1>
         <Card_course />
       </section>
-      <section className="grid">
+      <section>
         <Question />
+        <Add_question />
+      </section>
+      <section className="grid justify-items-center">
+        <h1 className="text-[52px] leading-[72.8px] font-medium font-nunito mt-[140px]">
+          INO для
+          <span className="bg-hightlight rounded-[20px] ml-1 px-2 text-text_accent">
+            учеников и студентов
+          </span>
+        </h1>
+        <p className="text-[26px] leading-[36.4px] text-text_accent w-[976px] text-center mt-[32px]">
+          Наша компания открыта для сотрудничества со школами и другими учебными
+          заведениями. Оставьте заявку и наш менеджер свяжется с вами для
+          обсуждения деталей.
+        </p>
+        <div className="flex gap-[24px] mt-[24px] items-center">
+          <input
+            type="text"
+            placeholder="E-mail"
+            className="w-[411px] pl-[32px] text-[20px] h-[76px] rounded-[16px] border-2 border-solid border-accent"
+          />
+          <button className=" bg-hightlight rounded-[900px] text-[20px] font-medium text-text_accent w-[261px] h-[76px]">
+            Спросить
+          </button>
+        </div>
+      </section>
+      <section>
+        <Slide_infor />
       </section>
     </main>
   );
