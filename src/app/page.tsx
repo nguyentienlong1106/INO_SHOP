@@ -32,7 +32,7 @@ export default function Home() {
           height={44}
         />
         <Image
-          className="absolute top-[200px] left-[80px]"
+          className="absolute top-[200px] left-[200px]"
           src="/star2.png"
           alt=""
           width={64.73}

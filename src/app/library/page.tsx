@@ -1,3 +1,4 @@
+import List_course from "@/components/List_course";
 import Image from "next/image";
 const Library = () => {
   return (
@@ -92,7 +93,7 @@ const Library = () => {
           </span>
         </div>
       </section>
-      <section>
+      <section className="mb-[140px]">
         <div className="flex mt-[140px] items-center ">
           <h1
             className="text-[40px] font-medium leading-[56px]
@@ -111,10 +112,13 @@ const Library = () => {
           Чем выше уровень сложности проекта, тем больше потребуется времени и
           навыков.
         </p>
-        <p className="mt-[16px] text-[20px] leading-[28px] text-[#909090] w-[754px]">
+        <p className="mt-[16px] text-[20px] leading-[28px] text-[#909090] w-[754px] mb-[16px]">
           Но не бойтесь брать сложные проекты — мы создали очень подробные
           видеоуроки, которые помогут вам в получении новых знаний!
         </p>
+        <List_course title="Для начала" />
+        <List_course title="Придется постараться" />
+        <List_course title="Сложно, но зато результативно" />
       </section>
     </main>
   );
