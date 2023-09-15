@@ -32,8 +32,8 @@ const Footer = () => {
           <p className="mt-[12px]">Контакты</p>
         </div>
         <div className="col-span-3 grid justify-items-end items-end justify-self-end mb-[40px] text-[18px] text-[#EAEAEA]">
-          <p className="mb-[-100px]">+7 (999) 999-99-99</p>
-          <p className="mb-[-50px]">example.email@gmail.com</p>
+          <p className="mb-[-100px]">+79610252425</p>
+          <p className="mb-[-50px]">info@inolearn.ru</p>
           <div className="flex gap-[35.33px]">
             <Image alt="" src="/telegram.png" width={33.33} height={33.33} />
             <Image alt="" src="/Vector.png" width={33.33} height={33.33} />

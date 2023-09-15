@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 
 import "@/style/globals.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const List_finish = ({ title }: { title: string }) => {
   return (
@@ -31,7 +32,7 @@ const List_finish = ({ title }: { title: string }) => {
               Машина на пульте управления
             </h3>
             <button className=" bg-white py-[12px] px-[15px] rounded-[900px] text-[20px] leading-[28px] font-medium text-text_accent w-[200px] absolute left-[36px] bottom-[36px] shadow-xl ">
-              Выполнено 78%
+              <Link href="/educational_part">Выполнено 78%</Link>
             </button>
             <Image
               alt=""
@@ -48,7 +49,7 @@ const List_finish = ({ title }: { title: string }) => {
               Машина на пульте управления
             </h3>
             <button className=" bg-white py-[12px] px-[15px] rounded-[900px] text-[20px] leading-[28px] font-medium text-text_accent w-[200px] absolute left-[36px] bottom-[36px] shadow-xl ">
-              Выполнено 78%
+              <Link href="/educational_part">Выполнено 78%</Link>
             </button>
             <Image
               alt=""

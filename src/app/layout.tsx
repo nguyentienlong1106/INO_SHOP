@@ -21,9 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`${inter.className} bg-secondary container mx-auto`}>
-        <Header />
-        {children}
+      <body className={`${inter.className} bg-secondary `}>
+        <div className="container mx-auto">
+          <Header />
+          {children}
+        </div>
+
         <Footer />
       </body>
     </html>
