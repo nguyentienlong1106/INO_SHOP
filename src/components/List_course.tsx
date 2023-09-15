@@ -26,7 +26,7 @@ const List_course = ({ title }: { title: string }) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative w-[519px] h-[246px] border-accent border-solid border-4 rounded-[16px] bg-gradient-to-t from-[#BDFF00] to-60% to-[#ffffff]">
+          <div className="relative w-[519px] h-[246px] border-accent border-solid border-4 rounded-[16px] bg-gradient-to-t from-accent to-60% to-[#ffffff]">
             <h3 className="mt-[36px] ml-[36px] font-medium text-[26px] leading-[36.4px] font-nunito text-text_accent">
               Делаем Tetris
             </h3>
@@ -60,7 +60,7 @@ const List_course = ({ title }: { title: string }) => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-[519px] h-[246px] border-accent border-solid border-4 rounded-[16px] bg-gradient-to-t from-[#BDFF00] to-60% to-[#ffffff]">
+          <div className="relative w-[519px] h-[246px] border-accent border-solid border-4 rounded-[16px] bg-gradient-to-t from-accent2 to-60% to-[#ffffff]">
             <h3 className="mt-[36px] ml-[36px] font-medium text-[26px] leading-[36.4px] font-nunito text-text_accent">
               Делаем Tetris
             </h3>

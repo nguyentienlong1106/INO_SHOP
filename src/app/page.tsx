@@ -220,7 +220,7 @@ mt-[32px] ml-[40px]"
               Конструктор INO
             </h2>
           </div>
-          <div className="col-span-5 border-[2px] border-solid border-camchua rounded-[16px]">
+          <div className="col-span-5 border-[2px] border-solid border-accent2 rounded-[16px]">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Плата
             </h2>

@@ -16,12 +16,11 @@ module.exports = {
       },
       colors: {
         accent: "#6B10FF",
-        camchua: "#FFC200",
         secondary: "#FFFFFF",
         hightlight: "#BDFF00",
         border_accent: "#A56FFF",
         text_accent: "#313131",
-        footer_accent: "#39068C",
+        accent2: "#FFC200",
       },
     },
   },

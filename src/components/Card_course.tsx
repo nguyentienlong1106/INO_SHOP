@@ -19,7 +19,7 @@ const Data = [
   {
     choice: "Полное погружение",
     icon: "/choice3.png",
-    color: "camchua",
+    color: "accent2",
     level: "Конструктор MAXIMUS",
     price: "40 000 ₽",
     infor: ["Конструктор «MAXIMUS»", "10 проектов", "Личный ментор"],

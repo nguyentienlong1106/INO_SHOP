@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer_accent text-secondary xl:mt-[74px]">
+    <footer className="bg-[#39068C] text-secondary xl:mt-[74px]">
       <div className="grid grid-cols-12 xl:mx-[80px] pt-[46px] gap-[22px]">
         <div className="col-span-3">
           <Image src="/logo.png" alt="" width={107} height={49} />
