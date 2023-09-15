@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        nunito: ["nuninto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
       colors: {
         accent: "#6B10FF",
