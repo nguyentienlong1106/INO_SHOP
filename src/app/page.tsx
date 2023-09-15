@@ -215,35 +215,81 @@ mt-[32px] ml-[40px]"
           Комплект
         </h1>
         <div className="grid grid-cols-12 gap-[24px]">
-          <div className="row-span-2 col-span-4 border-[2px] border-solid border-[#A56FFF] rounded-[16px] h-[432px]">
+          <div className="row-span-2 col-span-4 border-[2px] border-solid border-[#A56FFF] rounded-[16px] h-[432px] relative">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Конструктор INO
             </h2>
+            <p className="m-[20px] text-[22px] leading-[30.8px] text-[#707070]">
+              Это уникальный модульный обучающий игровой программно-аппаратный
+              комплекс программно-аппаратный комплекс..
+            </p>
+            <Image
+              className="absolute left-0 rounded-bl-[16px] bottom-0"
+              src="/image 1.png"
+              alt=""
+              width={359}
+              height={279}
+            />
           </div>
-          <div className="col-span-5 border-[2px] border-solid border-accent2 rounded-[16px]">
+          <div className="col-span-5 border-[2px] border-solid border-accent2 rounded-[16px] relative overflow-hidden">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Плата
             </h2>
+            <Image
+              className="absolute right-0 bottom-0"
+              src="/image 2.png"
+              alt=""
+              width={392}
+              height={276}
+            />
           </div>
-          <div className="col-span-3 border-[2px] border-solid border-accent rounded-[16px]">
+          <div className="col-span-3 border-[2px] border-solid border-accent rounded-[16px] relative overflow-hidden">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Модули
             </h2>
+            <Image
+              className="absolute right-0 bottom-0"
+              src="/image 5.png"
+              alt=""
+              width={152}
+              height={132}
+            />
           </div>
-          <div className="col-span-4 border-[2px] border-solid border-accent rounded-[16px]">
-            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
+          <div className="col-span-4 border-[2px] border-solid border-accent rounded-[16px] relative overflow-hidden">
+            <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent z-10 relative">
               Паяльник
             </h2>
+            <Image
+              className="absolute right-0 bottom-0"
+              src="/image 3.png"
+              alt=""
+              width={293}
+              height={136}
+            />
           </div>
-          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px]">
+          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px] relative overflow-hidden">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Провода
             </h2>
+            <Image
+              className="absolute right-0 bottom-0"
+              src="/image 4.png"
+              alt=""
+              width={179}
+              height={106}
+            />
           </div>
-          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px]">
+          <div className="col-span-2 border-[2px] border-solid border-[#A3DC00] rounded-[16px] relative overflow-hidden">
             <h2 className="mt-[32px] ml-[20px] font-nunito font-semibold text-[26px] text-text_accent">
               Инструкция
             </h2>
+            <Image
+              className="absolute right-0 bottom-0"
+              src="/Frame 5.png"
+              alt=""
+              width={122}
+              height={146}
+            />
           </div>
         </div>
       </section>
