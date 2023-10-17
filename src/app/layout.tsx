@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`${inter.className} bg-secondary `}>
+      <body className={`${inter.className} bg-secondary container_zoom`}>
         <div className="container mx-auto">
           <Header />
           {children}

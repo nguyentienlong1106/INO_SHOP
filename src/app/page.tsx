@@ -94,45 +94,80 @@ export default function Home() {
           </span>
         </h1>
         <div className="grid grid-cols-12 gap-6 mt-[48px]">
-          <div className="col-span-7 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+          <div className="col-span-7 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
             <p
               className="text-[32px] font-nunito font-medium
 mt-[32px] ml-[40px]"
             >
               Программирование
             </p>
+            <Image
+              className="absolute right-5 bottom-5"
+              src="/subject1.png"
+              alt=""
+              width={280}
+              height={280}
+            />
           </div>
-          <div className="col-span-5 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+          <div className="col-span-5 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
             <p
               className="text-[32px] font-nunito font-medium
 mt-[32px] ml-[40px]"
             >
               Схемотехника
             </p>
+            <Image
+              className="absolute right-5 bottom-5"
+              src="/subject2.png"
+              alt=""
+              width={213}
+              height={213}
+            />
           </div>
-          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
             <p
               className="text-[32px] font-nunito font-medium
 mt-[32px] ml-[40px]"
             >
               Электроника
             </p>
+            <Image
+              className="absolute right-24 bottom-5"
+              src="/subject3.png"
+              alt=""
+              width={197}
+              height={197}
+            />
           </div>
-          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
             <p
               className="text-[32px] font-nunito font-medium
 mt-[32px] ml-[40px]"
             >
               Робототехника
             </p>
+            <Image
+              className="absolute right-24 bottom-5"
+              src="/subject4.png"
+              alt=""
+              width={194}
+              height={194}
+            />
           </div>
-          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid ">
+          <div className="col-span-4 h-[328px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
             <p
               className="text-[32px] font-nunito font-medium
 mt-[32px] ml-[40px]"
             >
               Проектирование
             </p>
+            <Image
+              className="absolute right-24 bottom-5"
+              src="/subject5.png"
+              alt=""
+              width={224}
+              height={224}
+            />
           </div>
         </div>
       </section>
@@ -143,23 +178,25 @@ mt-[32px] ml-[40px]"
             профориентанционный тест
           </span>
         </h1>
-        <p className="text-[30px] leading-[42px] text-black font-medium mt-[48px] w-[954px] max-w-full">
-          Мы составили{" "}
+        <p className="text-[30px] leading-[42px] text-black font-medium mt-[48px] w-[90%] ">
+          В образовательный процесс встроена
           <span className="bg-hightlight rounded-[20px] px-2">
-            профориентационный тест,
+            профориентационная программа,
           </span>{" "}
-          по результатам которого мы составляем рекомендации проектов для наших
-          студентов
+          которая позволит вашему ребенку полностью раскрыть свой потенциал.
         </p>
         <div className="relative bg-[#F0F0F0] rounded-[16px] h-[226px] mt-[32px]">
           <h2 className="font-nunito font-medium text-[32px] mt-[24px] ml-[32px] mb-[16px] text-text_accent">
-            Профориентационный тест
+            Профориентация состоит из трех инструментов, которые направлены на:
           </h2>
-          <p className="text-[20px] leading-[28px] ml-[32px] w-[710px] max-w-full text-[#909090]">
-            Если вы не уверены в том, что хотите начать изучать, то вы можете
-            пройти наш тест, который позволит вам уточнить ваш вектор
-            профессионального развития
-          </p>
+          <ul className="text-[20px] leading-[28px] ml-[32px] w-full mt-[40px] text-[#909090]">
+            <li>- Развитие эмоционального интеллекта</li>
+            <li>- Учит основам тайм-менеджмента</li>
+            <li>
+              - Способствует пониманию своей потенциальной направленности
+              карьеры
+            </li>
+          </ul>
           <button className="absolute right-[32px] bottom-[24px] bg-hightlight  px-5 py-4 rounded-[900px] text-[20px] ">
             Начать тест
           </button>
@@ -220,8 +257,9 @@ mt-[32px] ml-[40px]"
               Конструктор INO
             </h2>
             <p className="m-[20px] text-[22px] leading-[30.8px] text-[#707070]">
-              Это уникальный модульный обучающий игровой программно-аппаратный
-              комплекс программно-аппаратный комплекс..
+              Вы реализуете свои проекты и получаете знания в электронике
+              создании Internet of Things (умных устройств), программирование,
+              робототехнике, схемотехнике.
             </p>
             <Image
               className="absolute left-0 rounded-bl-[16px] bottom-0"
@@ -331,6 +369,58 @@ mt-[32px] ml-[40px]"
       </section>
       <section>
         <Slide_infor />
+      </section>
+      <section className="grid">
+        <h1 className="text-[52px] leading-[72.8px] font-medium font-nunito text-text_accent mt-[140px]">
+          Подробнее об INO
+        </h1>
+        <div className="grid grid-cols-12 gap-6 mt-[48px]">
+          <div className="col-span-4 h-[488px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Электроника
+            </p>
+            <Image
+              className="absolute left-5 bottom-5"
+              src="/end1.png"
+              alt=""
+              width={214}
+              height={214}
+            />
+          </div>
+          <div className="col-span-4 h-[488px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Робототехника
+            </p>
+            <Image
+              className="absolute left-5 bottom-5"
+              src="/end2.png"
+              alt=""
+              width={335}
+              height={279}
+            />
+          </div>
+          <div className="col-span-4 h-[488px] rounded-[16px] border-4 border-[#A56FFF] border-solid relative ">
+            <p
+              className="text-[32px] font-nunito font-medium
+mt-[32px] ml-[40px]"
+            >
+              Проектирование
+            </p>
+            <Image
+              className="absolute left-5 bottom-5"
+              src="/end3.png"
+              alt=""
+              width={224}
+              height={224}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );

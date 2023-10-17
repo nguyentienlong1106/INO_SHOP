@@ -21,7 +21,7 @@ const Library = () => {
             className="w-full text-[24px] leading-[33.6px] border-none focus:outline-none ml-8"
             placeholder="Ищите определенный проект?"
           />
-          <button className=" bg-hightlight h-[52px] px-10 rounded-[900px] text-[20px] flex gap-[10px] items-center justify-center">
+          <button className=" bg-hightlight h-[52px] px-10 rounded-[900px] text-[20px] flex gap-[10px] items-center justify-center border-[1px] border-solid border-blue-700">
             <Image src="/filter.png" alt="" width={24} height={22.51} />
             Фильтры
           </button>
